@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+/* 共通部分
+--------------------------------------------------*/
+html {
+    font-size: 100%;
+}
+body{
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3, sans-serif";
+    line-height: 1.7;
+    color: #432;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+/* HEADER
+--------------------------------------------------*/
+.logo {
+    width: 210px;
+    margin-top: 9px;
+}
+
+.main-nav {
+    display: flex;
+    font-size: 1.0rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+
+}
+
+.main-nav li {
+    margin-left: 36px;
+}
+
+.main-nav a {
+    color: #432;
+}
+
+.main-nav a:hover {
+    color: #0db;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    max-width: 1100px;
+    padding: 0 4%;
+}
+.button {
+    font-size: 1.25rem;
+    background: #0bd;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px 25px;
+}
+.button:hover {
+    background-color: #1760a0;
+}
+
+/* HOME
+--------------------------------------------------*/
+/* 見出し */
+.page-title {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+/* 背景画像 */
+.big-bg {
+    background-image: url(../images/contact-gb.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+/* Contents
+
+--------------------------------------------------*/
+
+
+/* FOOTER
+--------------------------------------------------*/
+footer {
+    background: #432;
+    text-align: center;
+    padding: 10px 0;
+}
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+/* フォーム
+--------------------------------------------------*/
+#contact {
+    background-image: url(../images/contact-gb.jpg);
+    min-height: 100vh;
+}
+
+form div {
+    margin-bottom: 14px;
+}
+label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    background: rgba(255,255,255,.5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 95%;
+    max-width: 240px;
+}
+textarea {
+    width: 95%;
+    max-width: 480px;
+    height: 6rem;
+}
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+
+
+
+
+/* 携帯端末用
+--------------------------------------------------*/
+@media (max-width: 750px) {
+    .logo {
+        width: 120%;
+        height: 120%;
+    }
+
+    .page-title {
+        font-size: 2rem;
+        margin-top: 10%;
+        margin-bottom: 0px;
+    }
+
+    /* HEADER */
+    .main-nav {
+        font-size: 1rem;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-left: 0;
+    }
+    h1 {
+        margin-bottom: 0px;
+    }
+    .home-content p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+    }
+    .big-bg {
+        background-image: url(../images/contact-gb.jpg);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    .page-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* CONTACT */
+    #contact .page-title {
+        margin-top: 40px;
+    }
+
+    /* フォーム */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        max-width: 100%;
+    }
+}
